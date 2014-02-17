@@ -1,0 +1,5 @@
+﻿<# Add_Class(a:="Word", d:="Textual Grammatical Error.") #>
+<# Add_Behaviour(n:="Comparable", p:="Fd_Comparable:Value") #>
+<# Add_Field(n:="Value", t:="System.String", d:="Grammatical Error Value") #>
+<# Add_Field(n:="Location", t:="System.Int32", d:="Index Location within Containing String") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Object.tt" #>

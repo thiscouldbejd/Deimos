@@ -1,0 +1,3 @@
+﻿<# Add_Class(a:="Word", i:="Deimos.DocumentBase", p:="If Not Document Is Nothing Then Populate(Document, OfficeDocumentState.Existing, False, False)") #>
+<# Add_Field(n:="Document", a:="R", t:="W.Document") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Object.tt" #>

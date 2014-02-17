@@ -1,0 +1,4 @@
+﻿<# Add_Class(a:="Excel", i:="Deimos.DocumentBase", p:="If Not Workbook Is Nothing Then Populate(Workbook, OfficeDocumentState.Existing, False, False)") #>
+<# Add_Field(n:="Workbook", a:="R", t:="E.Workbook") #>
+<# Add_Field(n:="SheetCount", a:="R", t:="System.Int32") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Object.tt" #>

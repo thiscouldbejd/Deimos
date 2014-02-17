@@ -1,0 +1,7 @@
+﻿<# Add_Class(a:="Commands", c:=False) #>
+<# Add_Behaviour(n:="Command", p:="Cm_Resource:CommandDetails|Cm_Name:visio|Cm_Description:@commandVisioDescription@") #>
+<# Add_Behaviour(n:="CommandFlag", p:="Fl_Resource:CommandDetails|Pr_CommandFlag:Document|Fl_Flags:name|Fl_Descriptions:@commandVisioDescriptionName@|Fl_Args:@commandVisioParameterDescriptionName@") #>
+<# Add_Behaviour(n:="Disposable", p:="Pr_Names:Page") #>
+<#@ include file="..\Definitions\Command.def" #>
+<# Add_Field(n:="Page", t:="Deimos.Visio.PageWrapper") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Object.tt" #>

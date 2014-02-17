@@ -1,0 +1,4 @@
+﻿<# Add_Class(a:="Commands", c:=False) #>
+<# Add_Behaviour(n:="Command", p:="Cm_Resource:CommandDetails|Cm_Name:media|Cm_Description:@commandMediaDescription@") #>
+<#@ include file="..\Definitions\Command.def" #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Object.tt" #>

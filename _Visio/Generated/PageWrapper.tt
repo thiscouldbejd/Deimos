@@ -1,0 +1,4 @@
+﻿<# Add_Class(a:="Visio", i:="Deimos.PageBase") #>
+<# Add_Field(n:="Page", a:="R", t:="V.Page") #>
+<# Add_Field(n:="CacheMethod", a:="R", t:="System.Reflection.MethodBase", f:="Me.GetType.GetMethod(""SnapshotShapeFills"")") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Object.tt" #>

@@ -1,0 +1,9 @@
+﻿<# Add_Class(a:="Media") #>
+<# Add_Enum(n:="WMT_TYPE_DWORD", v:=0) #>
+<# Add_Enum(n:="WMT_TYPE_STRING", v:=1) #>
+<# Add_Enum(n:="WMT_TYPE_BINARY", v:=2) #>
+<# Add_Enum(n:="WMT_TYPE_BOOL", v:=3) #>
+<# Add_Enum(n:="WMT_TYPE_QWORD", v:=4) #>
+<# Add_Enum(n:="WMT_TYPE_WORD", v:=5) #>
+<# Add_Enum(n:="WMT_TYPE_GUID", v:=6) #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Enum.tt" #>

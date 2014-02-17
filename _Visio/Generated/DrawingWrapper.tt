@@ -1,0 +1,4 @@
+﻿<# Add_Class(a:="Visio", i:="Deimos.DocumentBase", p:="If Not Drawing Is Nothing Then Populate(Drawing, OfficeDocumentState.Existing, False, False)") #>
+<# Add_Field(n:="Drawing", a:="R", t:="V.Document") #>
+<# Add_Field(n:="PageCount", a:="R", t:="System.Int32") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Object.tt" #>

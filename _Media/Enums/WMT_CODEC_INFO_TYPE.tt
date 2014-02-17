@@ -1,0 +1,5 @@
+﻿<# Add_Class(a:="Media") #>
+<# Add_Enum(n:="WMT_CODECINFO_AUDIO", v:=0) #>
+<# Add_Enum(n:="WMT_CODECINFO_VIDEO", v:=1) #>
+<# Add_Enum(n:="WMT_CODECINFO_UNKNOWN", v:=16777215) #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Enum.tt" #>

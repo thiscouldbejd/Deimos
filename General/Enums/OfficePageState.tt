@@ -1,0 +1,5 @@
+﻿<# Add_Class() #>
+<# Add_Enum(n:="None", v:=0, d:="Indicates no State, e.g. no Page") #>
+<# Add_Enum(n:="Existing", v:=1, d:="Indicates Page was already Open") #>
+<# Add_Enum(n:="Created", v:=2, d:="Indicates Page was Created") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Enum.tt" #>

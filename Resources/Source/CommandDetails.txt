@@ -1,0 +1,67 @@
+; Excel Command Descriptions
+
+commandExcelDescription = Input From/Output To Microsoft Excel Application
+commandExcelDescriptionInput = Input From Microsoft Excel Application
+commandExcelDescriptionOutput = Output To Microsoft Excel Application
+commandExcelDescriptionAggregate = Aggregate Workbooks/Worksheets From Microsoft Excel Application
+commandExcelDescriptionName = Name/Path of Excel Workbook/Worksheet
+commandExcelDescriptionOriginX = The Origin X (Column) for Input/Output
+commandExcelDescriptionOriginY = The Origin Y (Row) for Input/Output
+commandExcelDescriptionExtentX = The Extent X (Column) for Input
+commandExcelDescriptionExtentY = The Extent Y (Row) for Input
+
+; Excel Command Parameter Descriptions
+
+commandExcelParameterDescriptionName = <name|path of book!sheet (use a '+' at the end of the path/name to allow creation)>
+commandExcelParameterDescriptionOriginX = <column ordinal | default = first column for input/first clear column for output>
+commandExcelParameterDescriptionOriginY = <row ordinal | default = probable header row for input/first clear row for output>
+commandExcelParameterDescriptionExtentX = <column ordinal | default = data end>
+commandExcelParameterDescriptionExtentY = <row ordinal | default = data end>
+commandExcelParameterDescriptionFormattedObjects = Formatted Cube/s
+commandExcelParameterDescriptionDirectory = Directory Containing Excel Workbooks/Worksheets
+
+; Word Command Descriptions
+
+commandWordDescription = Output To Microsoft Word Application
+commandWordDescriptionName = Name/Path of Word Document
+
+; Word Command Parameter Descriptions
+
+commandWordParameterDescriptionName = <name|path of document (use a '+' at the end of the path to allow creation)>
+commandWordParameterDescriptionFormattedObjects = Formatted Cube/s
+
+; Visio Command Descriptions
+
+commandVisioDescription = Input From/Output To Microsoft Visio Application
+commandVisioDescriptionName = Name/Path of Visio Drawing
+commandVisioDescriptionOutput = Output to Microsoft Visio Application
+commandVisioDescriptionOutputShapes = Output to Microsoft Visio Shapes
+commandVisioDescriptionInput = Input from Microsoft Visio Application/Shapes
+commandVisioDescriptionResetShapes = Reset Shape Data
+
+; Visio Command Parameter Descriptions
+
+commandVisioParameterDescriptionName = <name!page of drawing (use a '+' at the end of the path/name to allow creation)>
+commandVisioParameterDescriptionShapes = <shape names>
+commandVisioParameterDescriptionFormattedObjects = Formatted Cube/s
+commandVisioParameterDescriptionObjects = Object/s
+commandVisioParameterDescriptionShapeType = Shape Type Name
+commandVisioParameterDescriptionPropertiesToLeave = Properties to Leave Alone (e.g. Name)
+
+; Media Command Descriptions
+
+commandMediaDescription = Windows Media Persistance/Management Layer Commands
+commandMediaGetMetadataDescription = Get Metadata from a Windows Media File/s
+commandMediaSetMetadataDescription = Set Metadata on a Windows Media File
+commandMediaAddMarkerDescription = Add Marker to a Windows Media File
+
+; Media Command Parameter Descriptions
+
+commandMediaFilePath = Path to Media File
+commandMediaFileDirectory = Directory of Media Files
+commandMediaFileSearchPattern = Media File Search Pattern (e.g. *.wmv)
+commandMediaFileSearchSubDirectories = Search Sub-Directories
+commandMediaAttributeName = Metadata Attribute Name
+commandMediaAttributeValue = Metadata Value Name
+commandMediaMarkerName = Marker Name
+commandMediaMarkerLocation = Marker Location

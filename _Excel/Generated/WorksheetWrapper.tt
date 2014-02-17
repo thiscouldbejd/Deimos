@@ -1,0 +1,4 @@
+﻿<# Add_Class(a:="Excel", i:="Deimos.PageBase") #>
+<# Add_Field(n:="Worksheet", t:="E.Worksheet") #>
+<# Add_Field(n:="Timeout", t:="System.Int32", f:="10") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Object.tt" #>

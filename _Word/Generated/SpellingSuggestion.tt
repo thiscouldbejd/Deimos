@@ -1,0 +1,4 @@
+﻿<# Add_Class(a:="Word", d:="Textual Spelling Suggestion.") #>
+<# Add_Behaviour(n:="Comparable", p:="Fd_Comparable:Value") #>
+<# Add_Field(n:="Value", t:="System.String", d:="Spelling Mistake Value") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Object.tt" #>

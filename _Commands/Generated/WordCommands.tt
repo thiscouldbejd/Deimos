@@ -1,0 +1,7 @@
+﻿<# Add_Class(a:="Commands", c:=False) #>
+<# Add_Behaviour(n:="Command", p:="Cm_Resource:CommandDetails|Cm_Name:word|Cm_Description:@commandOfficeDescriptionWord@") #>
+<# Add_Behaviour(n:="CommandFlag", p:="Fl_Resource:CommandDetails|Pr_CommandFlag:Document|Fl_Flags:name|Fl_Descriptions:@commandWordDescriptionName@|Fl_Args:@commandWordParameterDescriptionName@") #>
+<# Add_Behaviour(n:="Disposable", p:="Pr_Names:Document") #>
+<#@ include file="..\Definitions\Command.def" #>
+<# Add_Field(n:="Document", t:="Deimos.Word.DocumentWrapper") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Object.tt" #>

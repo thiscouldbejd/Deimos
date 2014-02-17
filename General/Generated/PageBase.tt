@@ -1,0 +1,4 @@
+﻿<# Add_Class(x:=True) #>
+<# Add_Field(n:="Parent", o:=True, t:="Deimos.DocumentBase") #>
+<# Add_Field(n:="State", a:="R", t:="Deimos.OfficePageState", f:="Deimos.OfficePageState.None") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Object.tt" #>

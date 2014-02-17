@@ -1,0 +1,6 @@
+﻿<# Add_Class() #>
+<# Add_Enum(n:="None", v:=0, d:="Indicates no Application") #>
+<# Add_Enum(n:="Excel", v:=1, d:="Indicates Application should be Microsoft Excel") #>
+<# Add_Enum(n:="Word", v:=2, d:="Indicates Application should be Microsoft Word") #>
+<# Add_Enum(n:="Visio", v:=3, d:="Indicates Application should be Microsoft Visio") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Enum.tt" #>

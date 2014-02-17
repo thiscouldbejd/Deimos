@@ -1,0 +1,5 @@
+﻿<# Add_Class(a:="Excel") #>
+<# Add_Enum(n:="Left", v:=1, d:="Horizontal Align the Element on the Left") #>
+<# Add_Enum(n:="Center", v:=2, d:="Horizontal Align the Element in the Center") #>
+<# Add_Enum(n:="Right", v:=3, d:="Horizontal Align the Element on the Right") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Enum.tt" #>

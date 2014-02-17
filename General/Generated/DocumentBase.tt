@@ -1,0 +1,5 @@
+﻿<# Add_Class(x:=True) #>
+<# Add_Field(n:="OwnsApplicationInstance", a:="R", t:="System.Boolean") #>
+<# Add_Field(n:="State", a:="R", t:="Deimos.OfficeDocumentState", f:="Deimos.OfficeDocumentState.None") #>
+<# Add_Field(n:="ApplicationVisible", a:="R", t:="System.Boolean") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Object.tt" #>

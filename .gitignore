@@ -6,6 +6,9 @@ obj/
 Packages/
 *.nupkg
 
+# Common Binaries
+Common-Binaries/
+
 #User Specific Files
 *.user
 *.suo

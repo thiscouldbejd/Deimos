@@ -1,0 +1,4 @@
+﻿<# Add_Class(a:="Excel") #>
+<# Add_Field(n:="Stream", t:="System.IO.Stream", d:="Stream which the File will be Written to") #>
+<# Add_Field(n:="Properties", t:="System.Collections.ArrayList", f:="NEW") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Object.tt" #>

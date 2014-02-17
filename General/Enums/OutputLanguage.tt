@@ -1,0 +1,5 @@
+﻿<# Add_Class() #>
+<# Add_Enum(n:="VisualBasic", v:=1, d:="Defines the Output Language as Visual Basic") #>
+<# Add_Enum(n:="CSharp", v:=2, d:="Defines the Output Language as C# (C-Sharp)") #>
+<# Add_Enum(n:="JSharp", v:=3, d:="Defines the Output Languages as J# (J-Sharp)") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Enum.tt" #>

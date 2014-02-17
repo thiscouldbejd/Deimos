@@ -1,0 +1,5 @@
+﻿<# Add_Class(a:="Media") #>
+<# Add_Behaviour("Comparable", p:="Fd_Comparable:Location") #>
+<# Add_Field(n:="Name", t:="System.String") #>
+<# Add_Field(n:="Location", t:="System.UInt64") #>
+<#@ include file="%TEMPLATES_PATH%\Classes\VB_Object.tt" #>

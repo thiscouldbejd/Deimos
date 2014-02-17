@@ -1,0 +1,5 @@
+﻿; General Exception Messages
+
+commandOfficeCouldNotGetApplicationInstance = Could not retrieve or create an instance of Application (ID: {0}). Perhaps the application is not installed?
+commandOfficeCouldNotFindFile = Could not find or create office file named: {0}
+commandOfficeCouldNotFindPage = Could not find office page, worksheet or drawing named: {0}
