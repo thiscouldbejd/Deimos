@@ -250,8 +250,14 @@ Namespace Excel
 				Dim cellRange As E.Range = Worksheet.UsedRange
 				Dim dataRange(,) As Object = GetCellValues(cellRange)
 				cellRange = Nothing
-				Dim columnCount As Integer = dataRange.GetUpperBound(1)
-				Dim rowCount As Integer = dataRange.GetUpperBound(0)
+				
+				Dim columnCount As Integer = 0
+				Dim rowCount As Integer = 0
+				
+				If Not dataRange Is Nothing Then
+					columnCount = dataRange.GetUpperBound(1)
+					rowCount = dataRange.GetUpperBound(0)
+				End If
 				' ---------------------------------------------------
 
 				' -- Reset the Start and End Values if Required --
@@ -303,55 +309,59 @@ Namespace Excel
 				' Create a New DataTable
 				Dim dt As New DataTable()
 
-				' Declare Current Row
-				Dim cRow As Integer = startRow
+				If columnCount > 0 Then
 
-				' Perform an until Column Finish Loop
-				For i As Integer = startColumn To columnCount
+					' Declare Current Row
+					Dim cRow As Integer = startRow
 
-					If hasColumnHeadings AndAlso Not String.IsNullOrEmpty(dataRange(cRow, i)) Then
+					' Perform an until Column Finish Loop
+					For i As Integer = startColumn To columnCount
 
-						' Add a column with a Name
-						dt.Columns.Add(New DataColumn(dataRange(cRow, i)))
+						If hasColumnHeadings AndAlso Not String.IsNullOrEmpty(dataRange(cRow, i)) Then
 
-					Else
+							' Add a column with a Name
+							dt.Columns.Add(New DataColumn(dataRange(cRow, i)))
 
-						' Add a column with an Integer
-						dt.Columns.Add(New DataColumn(i - startColumn))
+						Else
 
-					End If
+							' Add a column with an Integer
+							dt.Columns.Add(New DataColumn(i - startColumn))
 
-				Next
-
-				' If there are Column Names, we need to move on a row to get to the data
-				If hasColumnHeadings Then cRow += 1
-
-				For i As Integer = cRow To rowCount
-
-					Dim aryRowData(columnCount - 1) As Object
-
-					For j As Integer = startColumn To columnCount
-
-						aryRowData(j - startColumn) = dataRange(i, j)
+						End If
 
 					Next
 
-					' Create and Populate a new Row in the Table
-					dt.Rows.Add(aryRowData)
+					' If there are Column Names, we need to move on a row to get to the data
+					If hasColumnHeadings Then cRow += 1
 
-					' Iterate the Row Number
-					cRow += 1
+					For i As Integer = cRow To rowCount
 
-					If Not host Is Nothing AndAlso host.Available(VerbosityLevel.Interactive)  Then
+						Dim aryRowData(columnCount - 1) As Object
 
-						Dim shouldOutput As Integer = 0
-						Math.DivRem(cRow - startRow, CInt(Math.Ceiling(rowCount / 50)), shouldOutput)
-						If shouldOutput = 0 OrElse (cRow - startRow) / (endRow - startRow) = 1 Then host.Progress((cRow - startRow) / (endRow - startRow), _
-							"Extracting Worksheet Rows")
+						For j As Integer = startColumn To columnCount
 
-					End If
+							aryRowData(j - startColumn) = dataRange(i, j)
 
-				Next
+						Next
+
+						' Create and Populate a new Row in the Table
+						dt.Rows.Add(aryRowData)
+
+						' Iterate the Row Number
+						cRow += 1
+
+						If Not host Is Nothing AndAlso host.Available(VerbosityLevel.Interactive)  Then
+
+							Dim shouldOutput As Integer = 0
+							Math.DivRem(cRow - startRow, CInt(Math.Ceiling(rowCount / 50)), shouldOutput)
+							If shouldOutput = 0 OrElse (cRow - startRow) / (endRow - startRow) = 1 Then host.Progress((cRow - startRow) / (endRow - startRow), _
+								"Extracting Worksheet Rows")
+
+						End If
+
+					Next
+
+				End If
 
 				If Not mappings Is Nothing AndAlso mappings.Count > 0 Then
 
